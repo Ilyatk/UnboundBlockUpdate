@@ -1,7 +1,9 @@
 #!/bin/bash
 /home/ilya/ad-block/unbound-get-adblock.sh
 cp /home/ilya/ad-block/block.conf /etc/unbound/block.conf
-sudo systemctl restart unbound.service
+#sudo systemctl restart unbound.service
+unbound-control reload
+
 
 
 
