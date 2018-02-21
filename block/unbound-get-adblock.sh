@@ -1,8 +1,9 @@
 #!/bin/sh
 
 #Change it.
-WorkingDir=/home/ilya/ad-block
+WorkingDir=${UPDATE_BLOCK_LIST_WORK_DIR:-.}
 
+echo "Working dir: " $WorkingDir
 NOW=$(date +"%Y-%m-%d %H:%M:%S")
 echo 'Update ad-block config' $NOW
 
